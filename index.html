@@ -15,6 +15,7 @@
       --text: #1d1d1b;
       --muted: #5c5b55;
       --accent: #b08a2d;
+      --accent-dark: #8e6d1d;
       --teal: #00AAD4;
       --line: #e2ddd0;
       --dark: #111111;
@@ -96,7 +97,7 @@
     }
 
     .nav-links a {
-      color: rgba(247, 245, 239, 0.86);
+      color: rgba(247, 245, 239, 0.88);
       font-size: 0.96rem;
       font-weight: 600;
       letter-spacing: 0.01em;
@@ -107,8 +108,8 @@
     }
 
     .nav-links .contact-link {
-      color: var(--dark);
-      background: var(--light);
+      color: #ffffff;
+      background: var(--accent);
       padding: 9px 15px;
       border-radius: 999px;
       font-weight: 750;
@@ -116,7 +117,7 @@
 
     .nav-links .contact-link:hover {
       color: #ffffff;
-      background: var(--teal);
+      background: var(--accent-dark);
     }
 
     .hero {
@@ -124,11 +125,28 @@
       padding-bottom: 54px;
     }
 
+    .hero-kicker {
+      margin: 0 0 10px;
+      color: var(--accent-dark);
+      font-size: 0.95rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
     .hero h1 {
-      font-size: clamp(2.6rem, 5vw, 4.4rem);
-      line-height: 1.05;
-      margin: 0 0 22px;
-      letter-spacing: -0.03em;
+      font-size: clamp(3rem, 6vw, 5.2rem);
+      line-height: 1.02;
+      margin: 0 0 14px;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-subline {
+      margin: 0 0 28px;
+      color: var(--text);
+      font-size: clamp(1.35rem, 2.4vw, 2rem);
+      font-weight: 750;
+      letter-spacing: -0.02em;
     }
 
     .hero p {
@@ -282,6 +300,10 @@
         padding-top: 46px;
       }
 
+      .hero h1 {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+      }
+
       .logo img {
         height: 48px;
       }
@@ -309,7 +331,7 @@
     <div class="nav-links">
       <a href="profil.html">Profil</a>
       <a href="kompetenzen.html">Kompetenzen</a>
-      <a href="projekte.html">Projekte</a>
+      <a href="https://daha2.github.io/Streptomyces-genome-analysis/">Projekte</a>
       <a href="schreiben.html">Schreiben</a>
       <a class="contact-link" href="#kontakt">Kontakt</a>
     </div>
@@ -319,7 +341,9 @@
 <main>
 
 <section class="hero container">
-  <h1>Analyse. Struktur. Klarheit.</h1>
+  <p class="hero-kicker">Persönliche Webseite</p>
+  <h1>Dr. Daniela Hartmann</h1>
+  <p class="hero-subline">Analyse. Struktur. Klarheit.</p>
 
   <p>
     Wenn ein Thema komplex wird, entscheidet die Qualität der Fragen über die Qualität der Lösung:
