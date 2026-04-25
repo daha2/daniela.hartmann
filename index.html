@@ -37,18 +37,31 @@ nav {
 
 .nav-links {
   display:flex;
-  gap:20px;
+  gap:18px;
+  align-items:center;
 }
 
 .nav-links a {
   color:#cfcfcf;
   font-size:15px;
   font-weight:600;
-  transition:0.25s ease;
 }
 
 .nav-links a:hover {
   color:#00AAD4;
+}
+
+/* GOLD BUTTON */
+.contact-link {
+  background:#b08a2d;
+  color:#fff !important;
+  padding:6px 14px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.contact-link:hover {
+  background:#8e6d1d;
 }
 
 /* HERO */
@@ -70,7 +83,7 @@ nav {
 }
 
 .hero p {
-  max-width:700px;
+  max-width:720px;
   color:#444;
 }
 
@@ -86,45 +99,57 @@ nav {
   background:white;
   border:1px solid #ddd;
   border-radius:14px;
-  padding:24px;
-  text-align:center;
+  padding:26px;
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  height:100%;
   transition: all 0.2s ease;
 }
 
 .card:hover {
-  transform:translateY(-5px);
-  box-shadow:0 12px 28px rgba(0,0,0,0.08);
+  transform:translateY(-6px);
+  box-shadow:0 14px 32px rgba(0,0,0,0.08);
 }
 
 .card-icon {
+  text-align:center;
   margin-bottom:18px;
 }
 
 .card-icon img {
-  width:64px;
-  height:64px;
+  width:100px;
+  height:100px;
 }
 
 .card h3 {
   margin-bottom:10px;
-  font-size:1.15rem;
 }
 
 .card p {
   color:#555;
   font-size:0.95rem;
   margin-bottom:12px;
+  flex-grow:1;
 }
 
+/* BUTTON wie Forschungsseite */
 .text-link {
+  display:inline-block;
+  margin-top:16px;
+  padding:6px 12px;
+  border:1px solid #00AAD4;
+  border-radius:6px;
   color:#00AAD4;
   font-weight:bold;
-  font-size:0.95rem;
-  transition:0.2s;
+  font-size:0.92rem;
+  width:fit-content;
+  transition:0.2s ease;
 }
 
 .text-link:hover {
-  text-decoration:underline;
+  background:#00AAD4;
+  color:white;
 }
 
 /* CONTACT */
@@ -142,10 +167,6 @@ nav {
 
 .contact-text {
   max-width:620px;
-}
-
-.contact h2 {
-  margin-top:0;
 }
 
 .contact p {
@@ -193,7 +214,7 @@ footer {
     <a href="kompetenzen.html">Kompetenzen</a>
     <a href="https://daha2.github.io/Streptomyces-genome-analysis/">Projekte</a>
     <a href="schreiben.html">Schreiben</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="#kontakt" class="contact-link">Kontakt</a>
   </div>
 </nav>
 </header>
@@ -202,15 +223,18 @@ footer {
 
 <section class="container hero">
 <h1>Dr. Daniela Hartmann</h1>
-<p class="hero-subline">Analyse komplexer Systeme. Struktur. Klarheit.</p>
+<p class="hero-subline">Analyse. Struktur. Klarheit.</p>
 
 <p>
-Ich arbeite an der Analyse komplexer Fragestellungen – von biologischen Daten 
-über wissenschaftliche Zusammenhänge bis hin zu strukturellen und kommunikativen Herausforderungen.
+Komplexe Themen sind oft vorhanden, aber schwer greifbar – Daten, Inhalte oder Texte wirken unübersichtlich oder widersprüchlich.
 </p>
 
 <p>
-Ein Schwerpunkt liegt auf vergleichender Genomik und der Analyse von Biosynthese-Genclustern.
+Genau hier beginnt meine Arbeit: Strukturen sichtbar machen, relevante Informationen herausarbeiten und daraus klare, nachvollziehbare Ergebnisse entwickeln.
+</p>
+
+<p>
+Ob wissenschaftliche Analyse, Textarbeit oder konzeptionelle Fragestellungen – entscheidend ist, Komplexität so aufzubereiten, dass Orientierung entsteht.
 </p>
 </section>
 
@@ -220,29 +244,37 @@ Ein Schwerpunkt liegt auf vergleichender Genomik und der Analyse von Biosynthese
 <div class="card">
   <div class="card-icon"><img src="icons/profil.svg"></div>
   <h3>Profil</h3>
-  <p>Interdisziplinärer Hintergrund aus Naturwissenschaft und Betriebswirtschaft.</p>
-  <a class="text-link" href="profil.html">→ Profil</a>
+  <p>
+    Unterschiedliche Perspektiven – Naturwissenschaft, Betriebswirtschaft und Lehre – ermöglichen einen Blick, der Zusammenhänge erkennt und strukturiert.
+  </p>
+  <a class="text-link" href="profil.html">→ Details</a>
 </div>
 
 <div class="card">
   <div class="card-icon"><img src="icons/kompetenzen.svg"></div>
   <h3>Kompetenzen</h3>
-  <p>Analyse, Strukturierung und Aufbereitung komplexer Inhalte.</p>
-  <a class="text-link" href="kompetenzen.html">→ Kompetenzen</a>
+  <p>
+    Wenn Inhalte komplex werden, braucht es Analyse, Struktur und ein Verständnis für Zielgruppen, um daraus verständliche Ergebnisse zu entwickeln.
+  </p>
+  <a class="text-link" href="kompetenzen.html">→ Details</a>
 </div>
 
 <div class="card">
   <div class="card-icon"><img src="icons/projekte.svg"></div>
   <h3>Projekte</h3>
-  <p>Vergleichende Genomanalyse von <em>Streptomyces silvae</em>.</p>
-  <a class="text-link" href="https://daha2.github.io/Streptomyces-genome-analysis/">→ Forschungswebseite</a>
+  <p>
+    Die Forschungswebseite zeigt, wie sich komplexe Daten, Bioinformatik und Analyse in eine klare und nachvollziehbare Darstellung überführen lassen.
+  </p>
+  <a class="text-link" href="https://daha2.github.io/Streptomyces-genome-analysis/">→ Details</a>
 </div>
 
 <div class="card">
   <div class="card-icon"><img src="icons/schreiben.svg"></div>
   <h3>Schreiben</h3>
-  <p>Analyse komplexer Inhalte in wissenschaftlicher und erzählerischer Form.</p>
-  <a class="text-link" href="schreiben.html">→ Schreibprojekt</a>
+  <p>
+    Ein Romanprojekt verbindet aktuelle wissenschaftliche Themen mit erzählerischer Struktur und macht komplexe Inhalte in einer spannenden Geschichte erfahrbar.
+  </p>
+  <a class="text-link" href="schreiben.html">→ Details</a>
 </div>
 
 </div>
@@ -254,7 +286,7 @@ Ein Schwerpunkt liegt auf vergleichender Genomik und der Analyse von Biosynthese
 <div class="contact-text">
 <h2>Kontakt</h2>
 <p>
-Für Anfragen zu Analyse, wissenschaftlicher Auswertung oder Strukturierung erreichen Sie mich per E-Mail.
+Sie arbeiten an einem komplexen Thema, das klarer strukturiert oder verständlich aufbereitet werden soll?
 </p>
 <p>
 <a href="mailto:hartmann.daniela@proton.me">hartmann.daniela@proton.me</a>
