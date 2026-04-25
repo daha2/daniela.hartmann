@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Daniela Hartmann</title>
+
+<style>
+:root {
+  --bg: #f7f5ef;
+  --text: #1d1d1b;
+  --muted: #5c5b55;
+  --accent: #b08a2d;
+  --teal: #00AAD4;
+  --line: #e2ddd0;
+}
+
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+header {
+  border-bottom:1px solid var(--line);
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav a {
+  margin-left:20px;
+  text-decoration:none;
+  color:var(--muted);
+}
+
+.hero {
+  padding:60px 0;
+}
+
+.hero h1 {
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  max-width:600px;
+  color:var(--muted);
+}
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  margin-top:40px;
+}
+
+.card {
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  border:1px solid var(--line);
+}
+
+.card-icon {
+  margin-bottom:15px;
+}
+
+.card-icon img {
+  width:40px;
+}
+
+.card h3 {
+  margin-bottom:10px;
+}
+
+.card p {
+  color:var(--muted);
+}
+
+.highlight {
+  color:var(--teal);
+}
+
+.contact {
+  margin-top:50px;
+  padding:30px;
+  background:#1d1d1b;
+  color:#f7f5ef;
+  border-radius:14px;
+}
+
+.contact p {
+  color:#d8d4c8;
+}
+
+.contact a {
+  color:var(--teal);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.contact a:hover {
+  text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="container">
+<nav>
+<strong>Dr. Daniela Hartmann</strong>
+<div>
+<a href="#">Profil</a>
+<a href="#">Kompetenzen</a>
+<a href="#">Projekte</a>
+<a href="#">Schreiben</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+</nav>
+</header>
+
+<section class="hero container">
+<h1>Analyse. Struktur. Sprache.</h1>
+<p>
+Ich verbinde naturwissenschaftliche Genauigkeit mit einem sicheren Blick für Texte, Menschen und Zusammenhänge. Mich interessiert, <span class="highlight">was</span> hinter einem Thema steht, <span class="highlight">wie</span> es funktioniert, <span class="highlight">wo</span> die eigentlichen Fragen liegen und <span class="highlight">warum</span> es relevant ist.
+</p>
+
+<p>
+Beruflich suche ich Aufgaben, in denen Analyse, Sprache und Struktur gefragt sind – gern flexibel oder remote-orientiert. Besonders passend sind Rollen in Wissenschaftskommunikation, Projektarbeit, Redaktion, Referententätigkeit, Analyse oder fachnaher Textarbeit.
+</p>
+</section>
+
+<section class="container">
+<div class="cards">
+
+<div class="card">
+<div class="card-icon"><img src="icons/profil.svg"></div>
+<h3>Profil</h3>
+<p>
+Mein Profil ist breit angelegt, aber nicht beliebig: Mikrobiologie, Betriebswirtschaft, Lehre, Textarbeit und eigenständige Projektentwicklung gehören für mich zusammen. Ich arbeite mich schnell in neue Themen ein, erkenne Muster und kann unterschiedliche Perspektiven zu einer tragfähigen Linie verbinden.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon"><img src="icons/kompetenzen.svg"></div>
+<h3>Kompetenzen</h3>
+<p>
+Meine Stärke liegt darin, komplexe Sachverhalte präzise zu erfassen und so aufzubereiten, dass sie verständlich, belastbar und nutzbar werden. Dazu gehören wissenschaftliches Schreiben, Textanalyse, Recherche, Lehre, konzeptionelles Arbeiten und ein sicherer Umgang mit fachlich anspruchsvollen Inhalten.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon"><img src="icons/projekte.svg"></div>
+<h3>Projekte</h3>
+<p>
+Meine Projekte zeigen, wie ich Inhalte fachlich durchdringe und sichtbar erstelle. Die Forschungswebseite zur vergleichenden Genomanalyse ist ein Beispiel dafür: Sie verbindet wissenschaftliche Arbeit, digitale Darstellung, klare Struktur und eigenständige Umsetzung.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon"><img src="icons/schreiben.svg"></div>
+<h3>Schreiben</h3>
+<p>
+Ich schreibe an einem deutschsprachigen Romanprojekt. Dabei geht es mir nicht um Schreiben als Nebensache, sondern um eine andere Form des Denkens: Beobachtung, Atmosphäre, psychologische Dynamik und die Frage, wie komplexe Themen erzählerisch greifbar werden.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="container" id="kontakt">
+<div class="contact">
+<h2>Kontakt</h2>
+<p>
+Für fachlichen Austausch, berufliche Anfragen oder projektbezogene Kommunikation bin ich per E-Mail erreichbar.
+</p>
+<p>
+<a href="mailto:hartmann.daniela@postproton.me">hartmann.daniela@proton.me</a>
+</p>
+</div>
+</section>
+
+</body>
+</html>
