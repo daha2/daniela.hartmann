@@ -64,10 +64,7 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 <a href="#profil" class="hover:text-teal-600">Profil</a>
 <a href="#kompetenzen" class="hover:text-teal-600">Kompetenzen</a>
 <a href="#projekte" class="hover:text-teal-600">Projekte</a>
-
-<!-- FIX -->
 <a href="Echo der Unsichtbaren.html" class="hover:text-teal-600">Schreiben</a>
-
 <a href="#kontakt" class="gold-link font-semibold">Kontakt</a>
 </div>
 </div>
@@ -96,7 +93,6 @@ class="bg-white text-[#002B5B] px-8 py-4 rounded-full font-semibold hover:bg-tea
 Jetzt kontaktieren
 </a>
 
-<!-- FIX -->
 <a href="#projekte"
 class="border border-white/70 px-8 py-4 rounded-full">
 Forschung & Schreiben →
@@ -114,96 +110,6 @@ class="w-80 h-80 object-cover rounded-3xl shadow-2xl border border-white/20">
 </div>
 </header>
 
-<!-- PROFIL -->
-<section id="profil" class="py-20 bg-white">
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="section-title text-4xl font-semibold mb-12">Profil</h2>
-
-<div class="grid md:grid-cols-12 gap-12 items-center">
-
-<div class="md:col-span-7 text-lg leading-relaxed">
-<p class="mb-6">
-Mit einem interdisziplinären Hintergrund in 
-<strong class="text-[#00C4B4]">Naturwissenschaften</strong>, 
-<strong class="text-[#00C4B4]">Betriebswirtschaft</strong> und 
-<strong class="text-[#00C4B4]">Lehre</strong> 
-verbinde ich analytisches Denken mit strukturiertem Arbeiten und klarer Kommunikation.
-</p>
-
-<p>
-Ich arbeite dort, wo Themen komplex, unübersichtlich oder schwer vermittelbar sind – und entwickle daraus klare, belastbare und verständliche Ergebnisse.
-</p>
-</div>
-
-<div class="md:col-span-5 bg-zinc-100 p-8 rounded-3xl">
-
-<div class="space-y-6 text-sm">
-
-<div class="flex gap-4">
-<i class="fas fa-flask text-teal-600 text-2xl"></i>
-<div>
-<div class="font-semibold">Naturwissenschaften</div>
-<div class="text-zinc-600">Genomik, Mikrobiologie, Bioinformatik</div>
-</div>
-</div>
-
-<div class="flex gap-4">
-<i class="fas fa-chart-bar text-teal-600 text-2xl"></i>
-<div>
-<div class="font-semibold">Betriebswirtschaft</div>
-<div class="text-zinc-600">Analyse, Struktur, strategisches Denken</div>
-</div>
-</div>
-
-<div class="flex gap-4">
-<i class="fas fa-chalkboard-teacher text-teal-600 text-2xl"></i>
-<div>
-<div class="font-semibold">Kommunikation</div>
-<div class="text-zinc-600">Komplexes verständlich machen</div>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- KOMPETENZEN -->
-<section id="kompetenzen" class="py-20 bg-zinc-50">
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="section-title text-4xl font-semibold mb-12">Kernkompetenzen</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="bg-white p-10 rounded-3xl card-hover">
-<h3 class="text-xl font-semibold mb-4">Analyse komplexer Daten</h3>
-<p class="text-zinc-600">
-Systematische Auswertung wissenschaftlicher Daten, genomischer Informationen und komplexer Inhalte.
-</p>
-</div>
-
-<div class="bg-white p-10 rounded-3xl card-hover">
-<h3 class="text-xl font-semibold mb-4">Strukturierung komplexer Themen</h3>
-<p class="text-zinc-600">
-Aufbau klarer, nachvollziehbarer Strukturen aus unübersichtlichen Informationen.
-</p>
-</div>
-
-<div class="bg-white p-10 rounded-3xl card-hover">
-<h3 class="text-xl font-semibold mb-4">Verständliche Aufbereitung</h3>
-<p class="text-zinc-600">
-Übersetzung komplexer Inhalte in verständliche und zielgruppengerechte Kommunikation.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
 <!-- PROJEKTE -->
 <section id="projekte" class="py-20 bg-white">
 <div class="max-w-6xl mx-auto px-6">
@@ -212,7 +118,8 @@ Aufbau klarer, nachvollziehbarer Strukturen aus unübersichtlichen Informationen
 
 <div class="grid md:grid-cols-2 gap-10">
 
-<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
+<!-- CARD 1 -->
+<div class="bg-zinc-50 rounded-3xl p-10 card-hover flex flex-col h-full">
 <h3 class="text-2xl font-semibold mb-4">
 Comparative Genome Analysis of <i>Streptomyces silvae</i>
 </h3>
@@ -222,12 +129,13 @@ Promotionsforschung zur vergleichenden Genomanalyse mehrerer Stämme.
 </p>
 
 <a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
-class="inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
+class="mt-auto inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
 Details
 </a>
 </div>
 
-<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
+<!-- CARD 2 -->
+<div class="bg-zinc-50 rounded-3xl p-10 card-hover flex flex-col h-full">
 <h3 class="text-2xl font-semibold mb-4">Schreiben & Romanprojekt</h3>
 
 <p class="text-zinc-600 mb-6">
@@ -235,7 +143,7 @@ Integration wissenschaftlicher Themen in erzählerische Strukturen.
 </p>
 
 <a href="Echo der Unsichtbaren.html"
-class="inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
+class="mt-auto inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
 Details
 </a>
 </div>
