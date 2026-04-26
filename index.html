@@ -45,8 +45,13 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 
 <!-- NAV -->
 <nav class="bg-white border-b sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-        <div class="text-xl font-semibold text-[#002B5B]">Dr. Daniela Hartmann</div>
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <img src="Logo.svg" alt="Logo Dr. Daniela Hartmann" class="h-10 w-auto">
+            <span class="text-lg font-semibold text-[#002B5B] hidden sm:block">Dr. Daniela Hartmann</span>
+        </div>
 
         <div class="hidden md:flex gap-8 text-sm font-medium">
             <a href="#profil" class="hover:text-teal-600">Profil</a>
@@ -150,85 +155,14 @@ Ich arbeite dort, wo Themen komplex, unübersichtlich oder schwer vermittelbar s
 </div>
 </section>
 
-<!-- KOMPETENZEN -->
-<section id="kompetenzen" class="py-20 bg-zinc-50">
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="section-title text-4xl font-semibold mb-12">Kernkompetenzen</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="bg-white p-10 rounded-3xl card-hover">
-<h3 class="text-xl font-semibold mb-4">Analyse komplexer Daten</h3>
-<p class="text-zinc-600">
-Systematische Auswertung wissenschaftlicher Daten, genomischer Informationen und komplexer Inhalte.
-</p>
-</div>
-
-<div class="bg-white p-10 rounded-3xl card-hover">
-<h3 class="text-xl font-semibold mb-4">Strukturierung komplexer Themen</h3>
-<p class="text-zinc-600">
-Aufbau klarer, nachvollziehbarer Strukturen aus unübersichtlichen Informationen.
-</p>
-</div>
-
-<div class="bg-white p-10 rounded-3xl card-hover">
-<h3 class="text-xl font-semibold mb-4">Verständliche Aufbereitung</h3>
-<p class="text-zinc-600">
-Übersetzung komplexer Inhalte in verständliche und zielgruppengerechte Kommunikation.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- PROJEKTE -->
-<section id="projekte" class="py-20 bg-white">
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="section-title text-4xl font-semibold mb-12">Ausgewählte Projekte</h2>
-
-<div class="grid md:grid-cols-2 gap-10">
-
-<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
-<h3 class="text-2xl font-semibold mb-4">
-Comparative Genome Analysis of <i>Streptomyces silvae</i>
-</h3>
-
-<p class="text-zinc-600 mb-4">
-Promotionsforschung zur vergleichenden Genomanalyse mehrerer Stämme mit Fokus auf genomische Struktur, funktionelle Annotation und biosynthetische Potenziale.
-</p>
-
-<p class="text-zinc-600 mb-6">
-Analyse von Ähnlichkeiten und Unterschieden innerhalb einer Spezies sowie deren taxonomische Einordnung.
-</p>
-
-<a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
-class="text-teal-600 font-medium">
-Projekt ansehen →
-</a>
-</div>
-
-<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
-<h3 class="text-2xl font-semibold mb-4">Schreiben & Romanprojekt</h3>
-
-<p class="text-zinc-600">
-Integration wissenschaftlicher Themen in narrative Strukturen – Verbindung von Analyse, Sprache und erzählerischer Spannung.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
 <!-- KONTAKT -->
 <section id="kontakt" class="py-24 bg-[#002B5B] text-white">
-<div class="max-w-6xl mx-auto px-6 text-center">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
+<div>
 <h2 class="text-4xl font-semibold mb-6">Kontakt</h2>
 
-<p class="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto">
+<p class="text-xl text-zinc-300 mb-10">
 Sie arbeiten an einem komplexen Thema, das klarer strukturiert oder verständlich aufbereitet werden soll?
 </p>
 
@@ -236,6 +170,12 @@ Sie arbeiten an einem komplexen Thema, das klarer strukturiert oder verständlic
 class="bg-white text-[#002B5B] px-10 py-5 rounded-full text-lg font-semibold hover:bg-teal-400 hover:text-white transition">
 E-Mail senden
 </a>
+</div>
+
+<!-- LOGO UNTEN -->
+<div class="flex justify-center md:justify-end">
+<img src="Logo.svg" alt="Logo" class="w-40 opacity-90">
+</div>
 
 </div>
 </section>
