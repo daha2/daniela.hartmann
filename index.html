@@ -1,3 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Daniela Hartmann | Analyse. Struktur. Klarheit.</title>
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body { font-family: 'Inter', system-ui, sans-serif; }
+
+.hero-bg {
+    background: linear-gradient(135deg, #002B5B 0%, #003B7A 100%);
+}
+
+.section-title {
+    position: relative;
+}
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #00C4B4;
+    bottom: -8px;
+    left: 0;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+/* Goldener Kontakt-Link */
+.gold-link {
+    color: #b08a2d;
+}
+.gold-link:hover {
+    color: #8e6d1d;
+}
+</style>
+</head>
+
+<body class="bg-zinc-50 text-zinc-800">
+
 <!-- NAV -->
 <nav class="bg-white border-b sticky top-0 z-50">
 <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
@@ -20,7 +73,23 @@
 </div>
 </nav>
 
-<!-- HERO BUTTON FIX -->
+<!-- HERO -->
+<header class="hero-bg text-white py-24 md:py-32">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<div>
+<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+Analyse.<br>Struktur.<br><span class="text-teal-400">Klarheit.</span>
+</h1>
+
+<p class="text-xl md:text-2xl text-zinc-200 mb-6 max-w-lg">
+Ich analysiere komplexe Zusammenhänge und übersetze sie in klare, nachvollziehbare Ergebnisse.
+</p>
+
+<p class="text-zinc-300 mb-10 max-w-lg">
+Einsatz in Forschung, Analyseprojekten, wissenschaftlicher Kommunikation und konzeptionellen Fragestellungen.
+</p>
+
 <div class="flex flex-wrap gap-4">
 <a href="#kontakt"
 class="bg-white text-[#002B5B] px-8 py-4 rounded-full font-semibold hover:bg-teal-400 hover:text-white transition">
@@ -30,6 +99,176 @@ Jetzt kontaktieren
 <!-- FIX -->
 <a href="#projekte"
 class="border border-white/70 px-8 py-4 rounded-full">
-Projekte entdecken →
+Forschung & Schreiben →
 </a>
 </div>
+</div>
+
+<!-- PORTRAIT -->
+<div class="hidden md:flex justify-end">
+<img src="Daniela Hartmann.png"
+alt="Portrait Dr. Daniela Hartmann"
+class="w-80 h-80 object-cover rounded-3xl shadow-2xl border border-white/20">
+</div>
+
+</div>
+</header>
+
+<!-- PROFIL -->
+<section id="profil" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="section-title text-4xl font-semibold mb-12">Profil</h2>
+
+<div class="grid md:grid-cols-12 gap-12 items-center">
+
+<div class="md:col-span-7 text-lg leading-relaxed">
+<p class="mb-6">
+Mit einem interdisziplinären Hintergrund in 
+<strong class="text-[#00C4B4]">Naturwissenschaften</strong>, 
+<strong class="text-[#00C4B4]">Betriebswirtschaft</strong> und 
+<strong class="text-[#00C4B4]">Lehre</strong> 
+verbinde ich analytisches Denken mit strukturiertem Arbeiten und klarer Kommunikation.
+</p>
+
+<p>
+Ich arbeite dort, wo Themen komplex, unübersichtlich oder schwer vermittelbar sind – und entwickle daraus klare, belastbare und verständliche Ergebnisse.
+</p>
+</div>
+
+<div class="md:col-span-5 bg-zinc-100 p-8 rounded-3xl">
+
+<div class="space-y-6 text-sm">
+
+<div class="flex gap-4">
+<i class="fas fa-flask text-teal-600 text-2xl"></i>
+<div>
+<div class="font-semibold">Naturwissenschaften</div>
+<div class="text-zinc-600">Genomik, Mikrobiologie, Bioinformatik</div>
+</div>
+</div>
+
+<div class="flex gap-4">
+<i class="fas fa-chart-bar text-teal-600 text-2xl"></i>
+<div>
+<div class="font-semibold">Betriebswirtschaft</div>
+<div class="text-zinc-600">Analyse, Struktur, strategisches Denken</div>
+</div>
+</div>
+
+<div class="flex gap-4">
+<i class="fas fa-chalkboard-teacher text-teal-600 text-2xl"></i>
+<div>
+<div class="font-semibold">Kommunikation</div>
+<div class="text-zinc-600">Komplexes verständlich machen</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- KOMPETENZEN -->
+<section id="kompetenzen" class="py-20 bg-zinc-50">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="section-title text-4xl font-semibold mb-12">Kernkompetenzen</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Analyse komplexer Daten</h3>
+<p class="text-zinc-600">
+Systematische Auswertung wissenschaftlicher Daten, genomischer Informationen und komplexer Inhalte.
+</p>
+</div>
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Strukturierung komplexer Themen</h3>
+<p class="text-zinc-600">
+Aufbau klarer, nachvollziehbarer Strukturen aus unübersichtlichen Informationen.
+</p>
+</div>
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Verständliche Aufbereitung</h3>
+<p class="text-zinc-600">
+Übersetzung komplexer Inhalte in verständliche und zielgruppengerechte Kommunikation.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJEKTE -->
+<section id="projekte" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="section-title text-4xl font-semibold mb-12">Ausgewählte Projekte</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
+<h3 class="text-2xl font-semibold mb-4">
+Comparative Genome Analysis of <i>Streptomyces silvae</i>
+</h3>
+
+<p class="text-zinc-600 mb-6">
+Promotionsforschung zur vergleichenden Genomanalyse mehrerer Stämme.
+</p>
+
+<a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
+class="inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
+Details
+</a>
+</div>
+
+<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
+<h3 class="text-2xl font-semibold mb-4">Schreiben & Romanprojekt</h3>
+
+<p class="text-zinc-600 mb-6">
+Integration wissenschaftlicher Themen in erzählerische Strukturen.
+</p>
+
+<a href="Echo der Unsichtbaren.html"
+class="inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
+Details
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="py-24 bg-[#002B5B] text-white">
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-semibold mb-6">Kontakt</h2>
+
+<p class="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto">
+Sie arbeiten an einem komplexen Thema, das klarer strukturiert oder verständlich aufbereitet werden soll?
+</p>
+
+<a href="mailto:hartmann.daniela@proton.me"
+class="bg-white text-[#002B5B] px-10 py-5 rounded-full text-lg font-semibold hover:bg-teal-400 hover:text-white transition">
+E-Mail senden
+</a>
+
+<div class="mt-10 flex justify-center">
+<img src="Logo.svg" class="w-32 opacity-90">
+</div>
+
+</div>
+</section>
+
+<footer class="bg-zinc-900 text-zinc-400 py-10 text-center text-sm">
+© 2026 Dr. Daniela Hartmann
+</footer>
+
+</body>
+</html>
