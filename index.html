@@ -38,6 +38,14 @@ body { font-family: 'Inter', system-ui, sans-serif; }
     transform: translateY(-8px);
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 }
+
+/* Goldener Kontakt-Link */
+.gold-link {
+    color: #b08a2d;
+}
+.gold-link:hover {
+    color: #8e6d1d;
+}
 </style>
 </head>
 
@@ -45,22 +53,21 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 
 <!-- NAV -->
 <nav class="bg-white border-b sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-        
-        <!-- LOGO -->
-        <div class="flex items-center gap-3">
-            <img src="Logo.svg" alt="Logo Dr. Daniela Hartmann" class="h-10 w-auto">
-            <div class="text-xl font-semibold text-[#002B5B]">Dr. Daniela Hartmann</div>
-        </div>
+<div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
 
-        <div class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="#profil" class="hover:text-teal-600">Profil</a>
-            <a href="#kompetenzen" class="hover:text-teal-600">Kompetenzen</a>
-            <a href="#projekte" class="hover:text-teal-600">Projekte</a>
-            <a href="#schreiben" class="hover:text-teal-600">Schreiben</a>
-            <a href="#kontakt" class="hover:text-teal-600">Kontakt</a>
-        </div>
-    </div>
+<div class="flex items-center gap-3">
+<img src="Logo.svg" alt="Logo" class="h-10 w-auto">
+<div class="text-xl font-semibold text-[#002B5B]">Dr. Daniela Hartmann</div>
+</div>
+
+<div class="hidden md:flex gap-8 text-sm font-medium">
+<a href="#profil" class="hover:text-teal-600">Profil</a>
+<a href="#kompetenzen" class="hover:text-teal-600">Kompetenzen</a>
+<a href="#projekte" class="hover:text-teal-600">Projekte</a>
+<a href="#schreiben" class="hover:text-teal-600">Schreiben</a>
+<a href="#kontakt" class="gold-link font-semibold">Kontakt</a>
+</div>
+</div>
 </nav>
 
 <!-- HERO -->
@@ -93,10 +100,11 @@ Projekt ansehen →
 </div>
 </div>
 
+<!-- PORTRAIT -->
 <div class="hidden md:flex justify-end">
-<div class="w-80 h-80 bg-gradient-to-br from-teal-400 to-cyan-600 rounded-3xl flex items-center justify-center text-white text-6xl shadow-2xl">
-DH
-</div>
+<img src="Daniela Hartmann.png"
+alt="Portrait Dr. Daniela Hartmann"
+class="w-80 h-80 object-cover rounded-3xl shadow-2xl border border-white/20">
 </div>
 
 </div>
@@ -205,26 +213,27 @@ Aufbau klarer, nachvollziehbarer Strukturen aus unübersichtlichen Informationen
 Comparative Genome Analysis of <i>Streptomyces silvae</i>
 </h3>
 
-<p class="text-zinc-600 mb-4">
-Promotionsforschung zur vergleichenden Genomanalyse mehrerer Stämme mit Fokus auf genomische Struktur, funktionelle Annotation und biosynthetische Potenziale.
-</p>
-
 <p class="text-zinc-600 mb-6">
-Analyse von Ähnlichkeiten und Unterschieden innerhalb einer Spezies sowie deren taxonomische Einordnung.
+Promotionsforschung zur vergleichenden Genomanalyse mehrerer Stämme.
 </p>
 
 <a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
-class="text-teal-600 font-medium">
-Projekt ansehen →
+class="inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
+Details
 </a>
 </div>
 
 <div class="bg-zinc-50 rounded-3xl p-10 card-hover">
 <h3 class="text-2xl font-semibold mb-4">Schreiben & Romanprojekt</h3>
 
-<p class="text-zinc-600">
-Integration wissenschaftlicher Themen in narrative Strukturen – Verbindung von Analyse, Sprache und erzählerischer Spannung.
+<p class="text-zinc-600 mb-6">
+Integration wissenschaftlicher Themen in erzählerische Strukturen.
 </p>
+
+<a href="Echo der Unsichtbaren.html"
+class="inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
+Details
+</a>
 </div>
 
 </div>
@@ -246,9 +255,8 @@ class="bg-white text-[#002B5B] px-10 py-5 rounded-full text-lg font-semibold hov
 E-Mail senden
 </a>
 
-<!-- LOGO UNTEN -->
 <div class="mt-10 flex justify-center">
-<img src="Logo.svg" alt="Logo" class="w-32 opacity-90">
+<img src="Logo.svg" class="w-32 opacity-90">
 </div>
 
 </div>
