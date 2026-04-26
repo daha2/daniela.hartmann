@@ -35,8 +35,8 @@ body { font-family: 'Inter', system-ui, sans-serif; }
     transition: all 0.3s ease;
 }
 .card-hover:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 25px -5px rgb(0 0 0 / 0.08);
 }
 
 /* Goldener Kontakt-Link */
@@ -45,6 +45,24 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 }
 .gold-link:hover {
     color: #8e6d1d;
+}
+
+/* DETAILS BUTTON – sauber klein & ruhig */
+.details-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #00C4B4;
+    color: #00C4B4;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+.details-btn:hover {
+    background: #00C4B4;
+    color: white;
 }
 </style>
 </head>
@@ -110,6 +128,65 @@ class="w-80 h-80 object-cover rounded-3xl shadow-2xl border border-white/20">
 </div>
 </header>
 
+<!-- PROFIL -->
+<section id="profil" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="section-title text-4xl font-semibold mb-12">Profil</h2>
+
+<div class="grid md:grid-cols-12 gap-12 items-center">
+
+<div class="md:col-span-7 text-lg leading-relaxed">
+<p class="mb-6">
+Mit einem interdisziplinären Hintergrund in 
+<strong class="text-[#00C4B4]">Naturwissenschaften</strong>, 
+<strong class="text-[#00C4B4]">Betriebswirtschaft</strong> und 
+<strong class="text-[#00C4B4]">Lehre</strong> 
+verbinde ich analytisches Denken mit strukturiertem Arbeiten und klarer Kommunikation.
+</p>
+
+<p>
+Ich arbeite dort, wo Themen komplex, unübersichtlich oder schwer vermittelbar sind – und entwickle daraus klare, belastbare und verständliche Ergebnisse.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- KOMPETENZEN -->
+<section id="kompetenzen" class="py-20 bg-zinc-50">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="section-title text-4xl font-semibold mb-12">Kernkompetenzen</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Analyse komplexer Daten</h3>
+<p class="text-zinc-600">
+Systematische Auswertung wissenschaftlicher Daten und komplexer Inhalte.
+</p>
+</div>
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Strukturierung komplexer Themen</h3>
+<p class="text-zinc-600">
+Klare, nachvollziehbare Strukturen aus unübersichtlichen Informationen.
+</p>
+</div>
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Verständliche Aufbereitung</h3>
+<p class="text-zinc-600">
+Komplexe Inhalte verständlich und zielgruppengerecht darstellen.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
 <!-- PROJEKTE -->
 <section id="projekte" class="py-20 bg-white">
 <div class="max-w-6xl mx-auto px-6">
@@ -129,8 +206,8 @@ Promotionsforschung zur vergleichenden Genomanalyse mehrerer Stämme.
 </p>
 
 <a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
-class="mt-auto inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
-Details
+class="details-btn mt-auto">
+→ Details
 </a>
 </div>
 
@@ -143,8 +220,8 @@ Integration wissenschaftlicher Themen in erzählerische Strukturen.
 </p>
 
 <a href="Echo der Unsichtbaren.html"
-class="mt-auto inline-block border border-teal-600 text-teal-600 px-5 py-2 rounded-md font-medium hover:bg-teal-600 hover:text-white transition">
-Details
+class="details-btn mt-auto">
+→ Details
 </a>
 </div>
 
