@@ -3,304 +3,244 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Daniela Hartmann</title>
+<title>Dr. Daniela Hartmann | Analyse. Struktur. Klarheit.</title>
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#f7f5ef;
-  color:#222;
-  line-height:1.65;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body { font-family: 'Inter', system-ui, sans-serif; }
+
+.hero-bg {
+    background: linear-gradient(135deg, #002B5B 0%, #003B7A 100%);
 }
 
-/* HEADER */
-header { background:#111; }
-
-nav {
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:10px 20px;
+.section-title {
+    position: relative;
+}
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #00C4B4;
+    bottom: -8px;
+    left: 0;
 }
 
-.logo img {
-  height:48px;
-  background:white;
-  padding:6px;
-  border-radius:8px;
+.card-hover {
+    transition: all 0.3s ease;
 }
-
-.nav-links {
-  display:flex;
-  gap:18px;
-  align-items:center;
-}
-
-.nav-links a {
-  color:#cfcfcf;
-  font-size:15px;
-  font-weight:600;
-}
-
-.nav-links a:hover { color:#00AAD4; }
-
-/* GOLD BUTTON */
-.contact-link {
-  background:#b08a2d;
-  color:#fff !important;
-  padding:6px 14px;
-  border-radius:999px;
-  font-weight:700;
-}
-
-.contact-link:hover { background:#8e6d1d; }
-
-/* HERO */
-.container {
-  max-width:1050px;
-  margin:auto;
-  padding:45px 20px;
-}
-
-.hero h1 {
-  font-size:2.8rem;
-  margin-bottom:10px;
-}
-
-.hero-subline {
-  font-size:1.4rem;
-  font-weight:bold;
-  margin-bottom:18px;
-}
-
-.hero p {
-  max-width:720px;
-  color:#444;
-  margin-bottom:12px;
-}
-
-/* CARDS */
-.cards {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:22px;
-  margin-top:4px; /* FINAL – nochmals halbiert */
-}
-
-.card {
-  background:white;
-  border:1px solid #ddd;
-  border-radius:14px;
-  padding:24px;
-  display:flex;
-  flex-direction:column;
-  text-align:left;
-  height:100%;
-  transition: all 0.2s ease;
-}
-
-.card:hover {
-  transform:translateY(-5px);
-  box-shadow:0 12px 26px rgba(0,0,0,0.08);
-}
-
-.card-icon {
-  text-align:center;
-  margin-bottom:14px;
-}
-
-.card-icon img {
-  width:100px;
-  height:100px;
-}
-
-.card h3 {
-  margin-bottom:8px;
-}
-
-.card p {
-  color:#555;
-  font-size:0.95rem;
-  margin-bottom:6px;
-  flex-grow:1;
-}
-
-/* BUTTON */
-.text-link {
-  display:inline-block;
-  margin-top:4px;
-  padding:6px 12px;
-  border:1px solid #00AAD4;
-  border-radius:6px;
-  color:#00AAD4;
-  font-weight:bold;
-  font-size:0.92rem;
-  width:fit-content;
-  transition:0.2s ease;
-}
-
-.text-link:hover {
-  background:#00AAD4;
-  color:white;
-}
-
-/* CONTACT */
-.contact {
-  margin-top:40px;
-  background:#111;
-  color:#ddd;
-  padding:34px;
-  border-radius:14px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:30px;
-}
-
-.contact-text {
-  max-width:620px;
-}
-
-.contact p {
-  color:#c9c9c9;
-  margin-bottom:10px;
-}
-
-.contact a {
-  color:#00AAD4;
-  font-weight:bold;
-}
-
-.contact-logo img {
-  width:150px;
-  background:white;
-  padding:10px;
-  border-radius:10px;
-}
-
-/* FOOTER */
-footer {
-  text-align:center;
-  color:#666;
-  font-size:0.9rem;
-  padding:25px;
-}
-
-/* MOBILE */
-@media(max-width:900px){
-  .cards { grid-template-columns:1fr; }
-  .contact { flex-direction:column; text-align:center; }
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 }
 </style>
 </head>
 
-<body>
+<body class="bg-zinc-50 text-zinc-800">
 
-<header>
-<nav>
-  <div class="logo">
-    <img src="Logo.svg" alt="Logo">
-  </div>
+<!-- NAV -->
+<nav class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="text-xl font-semibold text-[#002B5B]">Dr. Daniela Hartmann</div>
 
-  <div class="nav-links">
-    <a href="profil.html">Profil</a>
-    <a href="kompetenzen.html">Kompetenzen</a>
-    <a href="https://daha2.github.io/Streptomyces-genome-analysis/">Projekte</a>
-    <a href="schreiben.html">Schreiben</a>
-    <a href="#kontakt" class="contact-link">Kontakt</a>
-  </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="#profil" class="hover:text-teal-600">Profil</a>
+            <a href="#kompetenzen" class="hover:text-teal-600">Kompetenzen</a>
+            <a href="#projekte" class="hover:text-teal-600">Projekte</a>
+            <a href="#schreiben" class="hover:text-teal-600">Schreiben</a>
+            <a href="#kontakt" class="hover:text-teal-600">Kontakt</a>
+        </div>
+    </div>
 </nav>
+
+<!-- HERO -->
+<header class="hero-bg text-white py-24 md:py-32">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<div>
+<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+Analyse.<br>Struktur.<br><span class="text-teal-400">Klarheit.</span>
+</h1>
+
+<p class="text-xl md:text-2xl text-zinc-200 mb-6 max-w-lg">
+Ich analysiere komplexe Zusammenhänge und übersetze sie in klare, nachvollziehbare Ergebnisse.
+</p>
+
+<p class="text-zinc-300 mb-10 max-w-lg">
+Einsatz in Forschung, Analyseprojekten, wissenschaftlicher Kommunikation und konzeptionellen Fragestellungen.
+</p>
+
+<div class="flex flex-wrap gap-4">
+<a href="#kontakt"
+class="bg-white text-[#002B5B] px-8 py-4 rounded-full font-semibold hover:bg-teal-400 hover:text-white transition">
+Jetzt kontaktieren
+</a>
+
+<a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
+class="border border-white/70 px-8 py-4 rounded-full">
+Projekt ansehen →
+</a>
+</div>
+</div>
+
+<div class="hidden md:flex justify-end">
+<div class="w-80 h-80 bg-gradient-to-br from-teal-400 to-cyan-600 rounded-3xl flex items-center justify-center text-white text-6xl shadow-2xl">
+DH
+</div>
+</div>
+
+</div>
 </header>
 
-<main>
+<!-- PROFIL -->
+<section id="profil" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
 
-<section class="container hero">
-<h1>Dr. Daniela Hartmann</h1>
-<p class="hero-subline">Analyse. Struktur. Klarheit.</p>
+<h2 class="section-title text-4xl font-semibold mb-12">Profil</h2>
 
-<p>
-Komplexe Themen sind oft vorhanden, aber schwer greifbar – Daten, Inhalte oder Texte wirken unübersichtlich oder widersprüchlich.
+<div class="grid md:grid-cols-12 gap-12 items-center">
+
+<div class="md:col-span-7 text-lg leading-relaxed">
+<p class="mb-6">
+Mit einem interdisziplinären Hintergrund in <strong>Naturwissenschaften</strong>, <strong>Betriebswirtschaft</strong> und <strong>Lehre</strong> verbinde ich analytisches Denken mit strukturiertem Arbeiten und klarer Kommunikation.
 </p>
 
 <p>
-Genau hier beginnt meine Arbeit: Strukturen sichtbar machen, relevante Informationen herausarbeiten und daraus klare, nachvollziehbare Ergebnisse entwickeln.
+Ich arbeite dort, wo Themen komplex, unübersichtlich oder schwer vermittelbar sind – und entwickle daraus klare, belastbare und verständliche Ergebnisse.
 </p>
-
-<p>
-Ob wissenschaftliche Analyse, Textarbeit oder konzeptionelle Fragestellungen – entscheidend ist, Komplexität so aufzubereiten, dass Orientierung entsteht.
-</p>
-</section>
-
-<section class="container">
-<div class="cards">
-
-<div class="card">
-  <div class="card-icon"><img src="icons/profil.svg"></div>
-  <h3>Profil</h3>
-  <p>
-    Unterschiedliche Perspektiven – Naturwissenschaft, Betriebswirtschaft und Lehre – ermöglichen einen strukturierten Blick auf komplexe Zusammenhänge.
-  </p>
-  <a class="text-link" href="profil.html">→ Details</a>
 </div>
 
-<div class="card">
-  <div class="card-icon"><img src="icons/kompetenzen.svg"></div>
-  <h3>Kompetenzen</h3>
-  <p>
-    Analyse, Strukturierung und verständliche Aufbereitung komplexer Inhalte für unterschiedliche Zielgruppen.
-  </p>
-  <a class="text-link" href="kompetenzen.html">→ Details</a>
+<div class="md:col-span-5 bg-zinc-100 p-8 rounded-3xl">
+
+<div class="space-y-6 text-sm">
+
+<div class="flex gap-4">
+<i class="fas fa-flask text-teal-600 text-2xl"></i>
+<div>
+<div class="font-semibold">Naturwissenschaften</div>
+<div class="text-zinc-600">Genomik, Mikrobiologie, Bioinformatik</div>
+</div>
 </div>
 
-<div class="card">
-  <div class="card-icon"><img src="icons/projekte.svg"></div>
-  <h3>Projekte</h3>
-  <p>
-    Forschungswebseite zur Darstellung komplexer genomischer Daten und bioinformatischer Analysen.
-  </p>
-  <a class="text-link" href="https://daha2.github.io/Streptomyces-genome-analysis/">→ Details</a>
+<div class="flex gap-4">
+<i class="fas fa-chart-bar text-teal-600 text-2xl"></i>
+<div>
+<div class="font-semibold">Betriebswirtschaft</div>
+<div class="text-zinc-600">Analyse, Struktur, strategisches Denken</div>
+</div>
 </div>
 
-<div class="card">
-  <div class="card-icon"><img src="icons/schreiben.svg"></div>
-  <h3>Schreiben</h3>
-  <p>
-    Romanprojekt, das wissenschaftliche Themen in eine spannende erzählerische Struktur integriert.
-  </p>
-  <a class="text-link" href="schreiben.html">→ Details</a>
+<div class="flex gap-4">
+<i class="fas fa-chalkboard-teacher text-teal-600 text-2xl"></i>
+<div>
+<div class="font-semibold">Kommunikation</div>
+<div class="text-zinc-600">Komplexes verständlich machen</div>
+</div>
 </div>
 
+</div>
+</div>
+
+</div>
 </div>
 </section>
 
-<section class="container" id="kontakt">
-<div class="contact">
+<!-- KOMPETENZEN -->
+<section id="kompetenzen" class="py-20 bg-zinc-50">
+<div class="max-w-6xl mx-auto px-6">
 
-<div class="contact-text">
-<h2>Kontakt</h2>
-<p>
+<h2 class="section-title text-4xl font-semibold mb-12">Kernkompetenzen</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Analyse komplexer Daten</h3>
+<p class="text-zinc-600">
+Systematische Auswertung wissenschaftlicher Daten, genomischer Informationen und komplexer Inhalte.
+</p>
+</div>
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Strukturierung komplexer Themen</h3>
+<p class="text-zinc-600">
+Aufbau klarer, nachvollziehbarer Strukturen aus unübersichtlichen Informationen.
+</p>
+</div>
+
+<div class="bg-white p-10 rounded-3xl card-hover">
+<h3 class="text-xl font-semibold mb-4">Verständliche Aufbereitung</h3>
+<p class="text-zinc-600">
+Übersetzung komplexer Inhalte in verständliche und zielgruppengerechte Kommunikation.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJEKTE -->
+<section id="projekte" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="section-title text-4xl font-semibold mb-12">Ausgewählte Projekte</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
+<h3 class="text-2xl font-semibold mb-4">
+Comparative Genome Analysis of <i>Streptomyces silvae</i>
+</h3>
+
+<p class="text-zinc-600 mb-4">
+Promotionsforschung zur vergleichenden Genomanalyse mehrerer Stämme mit Fokus auf genomische Struktur, funktionelle Annotation und biosynthetische Potenziale.
+</p>
+
+<p class="text-zinc-600 mb-6">
+Analyse von Ähnlichkeiten und Unterschieden innerhalb einer Spezies sowie deren taxonomische Einordnung.
+</p>
+
+<a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
+class="text-teal-600 font-medium">
+Projekt ansehen →
+</a>
+</div>
+
+<div class="bg-zinc-50 rounded-3xl p-10 card-hover">
+<h3 class="text-2xl font-semibold mb-4">Schreiben & Romanprojekt</h3>
+
+<p class="text-zinc-600">
+Integration wissenschaftlicher Themen in narrative Strukturen – Verbindung von Analyse, Sprache und erzählerischer Spannung.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="py-24 bg-[#002B5B] text-white">
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-semibold mb-6">Kontakt</h2>
+
+<p class="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto">
 Sie arbeiten an einem komplexen Thema, das klarer strukturiert oder verständlich aufbereitet werden soll?
 </p>
-<p>
-<a href="mailto:hartmann.daniela@proton.me">hartmann.daniela@proton.me</a>
-</p>
-</div>
 
-<div class="contact-logo">
-<img src="Logo.svg">
-</div>
+<a href="mailto:hartmann.daniela@proton.me"
+class="bg-white text-[#002B5B] px-10 py-5 rounded-full text-lg font-semibold hover:bg-teal-400 hover:text-white transition">
+E-Mail senden
+</a>
 
 </div>
 </section>
 
-</main>
-
-<footer>
+<footer class="bg-zinc-900 text-zinc-400 py-10 text-center text-sm">
 © 2026 Dr. Daniela Hartmann
 </footer>
 
