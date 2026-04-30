@@ -35,8 +35,8 @@ body { font-family: 'Inter', system-ui, sans-serif; }
     transition: all 0.3s ease;
 }
 .card-hover:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 25px -5px rgb(0 0 0 / 0.08);
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 25px 40px -10px rgba(0,0,0,0.12);
 }
 
 .icon-box {
@@ -50,6 +50,26 @@ body { font-family: 'Inter', system-ui, sans-serif; }
     color: #00C4B4;
     font-size: 1.1rem;
     margin-bottom: 14px;
+}
+
+/* VISUELLE SIGNATUR */
+.line {
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00C4B4, transparent);
+    top: 40%;
+    left: -300px;
+    animation: moveLine 12s linear infinite;
+}
+.line.delay {
+    top: 60%;
+    animation-delay: 6s;
+}
+
+@keyframes moveLine {
+    0% { left: -300px; }
+    100% { left: 110%; }
 }
 </style>
 </head>
@@ -77,22 +97,41 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 </nav>
 
 <!-- HERO -->
-<header class="hero-bg text-white py-28">
-<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<header class="hero-bg text-white py-28 relative overflow-hidden">
+
+<!-- GRID -->
+<div class="absolute inset-0 opacity-20">
+<svg width="100%" height="100%">
+<defs>
+<pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+<path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-width="0.5"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#grid)" />
+</svg>
+</div>
+
+<!-- LINIEN -->
+<div class="absolute inset-0 pointer-events-none">
+<div class="line"></div>
+<div class="line delay"></div>
+</div>
+
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
 
 <div>
-<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-Analyse.<br>
-Struktur.<br>
-<span class="text-teal-400">Klarheit.</span>
+<h1 class="text-5xl md:text-6xl font-bold mb-6 space-y-4 leading-tight">
+<span class="block">Analyse.</span>
+<span class="block">Struktur.</span>
+<span class="block text-teal-400">Klarheit.</span>
 </h1>
 
 <p class="text-xl text-zinc-200 mb-6 max-w-lg">
-Ich arbeite mich so lange in komplexe Zusammenhänge ein, bis sie wirklich klar sind – und mache diese Klarheit für andere nutzbar.
+Ich arbeite mich so lange in komplexe Zusammenhänge ein, bis sie wirklich klar sind.
 </p>
 
 <p class="text-zinc-300 mb-10 max-w-lg">
-Eigenständige Analyse, klare Struktur und verständliche Aufbereitung – auch in Remote-Umgebungen.
+Strukturierte Analyse und verständliche Aufbereitung – eigenständig und remote.
 </p>
 
 <div class="flex gap-4">
@@ -119,9 +158,15 @@ Projekte ansehen
 <h2 class="section-title text-4xl font-semibold mb-12">Profil</h2>
 
 <p class="text-lg max-w-3xl">
-Mich interessiert vor allem eines: komplexe Zusammenhänge so lange zu durchdringen, bis sie wirklich klar werden.  
-Ich arbeite mich schnell in neue Themen ein, erkenne Strukturen und bringe Inhalte in eine Form, die nachvollziehbar und nutzbar ist.
+Mich interessiert vor allem eines: Dinge so lange zu durchdringen, bis sie wirklich klar sind.
 </p>
+
+<div class="mt-6 border-l-4 border-teal-400 pl-6">
+    <p class="text-xl font-semibold">
+        Ich gebe mich nicht mit 
+        <span class="text-teal-400">oberflächlichen Antworten</span> zufrieden.
+    </p>
+</div>
 
 </div>
 </section>
@@ -135,25 +180,25 @@ Ich arbeite mich schnell in neue Themen ein, erkenne Strukturen und bringe Inhal
 
 <div class="bg-white p-10 rounded-3xl card-hover">
 <div class="icon-box"><i class="fa-solid fa-magnifying-glass"></i></div>
-<h3 class="text-xl font-semibold mb-3">Analyse komplexer Zusammenhänge</h3>
+<h3 class="text-xl font-semibold mb-3">Analyse</h3>
 <p class="text-zinc-600">
-Ich arbeite mich tief in Themen ein und erkenne relevante Muster und Zusammenhänge.
+Ich erkenne Muster und Zusammenhänge auch in komplexen Daten.
 </p>
 </div>
 
 <div class="bg-white p-10 rounded-3xl card-hover">
 <div class="icon-box"><i class="fa-solid fa-diagram-project"></i></div>
-<h3 class="text-xl font-semibold mb-3">Strukturierung</h3>
+<h3 class="text-xl font-semibold mb-3">Struktur</h3>
 <p class="text-zinc-600">
-Ich bringe Ordnung in komplexe Inhalte und entwickle klare, nachvollziehbare Strukturen.
+Ich bringe Ordnung in unübersichtliche Inhalte und entwickle klare Modelle.
 </p>
 </div>
 
 <div class="bg-white p-10 rounded-3xl card-hover">
 <div class="icon-box"><i class="fa-solid fa-lightbulb"></i></div>
-<h3 class="text-xl font-semibold mb-3">Verständliche Aufbereitung</h3>
+<h3 class="text-xl font-semibold mb-3">Klarheit</h3>
 <p class="text-zinc-600">
-Ich übersetze komplexe Inhalte so, dass sie verstanden und angewendet werden können.
+Ich mache komplexe Inhalte verständlich und nutzbar.
 </p>
 </div>
 
@@ -172,7 +217,7 @@ Ich übersetze komplexe Inhalte so, dass sie verstanden und angewendet werden k�
 <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
 <h3 class="text-xl font-semibold mb-3">Eigenständig</h3>
 <p class="text-zinc-600">
-Schnelle Einarbeitung und eigenständige Umsetzung ohne ständige Abstimmung.
+Schnelle Einarbeitung und selbstständige Umsetzung.
 </p>
 </div>
 
@@ -180,15 +225,15 @@ Schnelle Einarbeitung und eigenständige Umsetzung ohne ständige Abstimmung.
 <div class="icon-box"><i class="fa-solid fa-list-check"></i></div>
 <h3 class="text-xl font-semibold mb-3">Strukturiert</h3>
 <p class="text-zinc-600">
-Klare Zwischenschritte und nachvollziehbare Ergebnisse statt unübersichtlicher Prozesse.
+Klare Prozesse und nachvollziehbare Ergebnisse.
 </p>
 </div>
 
 <div class="bg-white p-10 rounded-3xl card-hover">
 <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
-<h3 class="text-xl font-semibold mb-3">Remote-erprobt</h3>
+<h3 class="text-xl font-semibold mb-3">Remote</h3>
 <p class="text-zinc-600">
-Zuverlässige Kommunikation und transparente Arbeitsweise auf Distanz.
+Zuverlässige Kommunikation und effizientes Arbeiten auf Distanz.
 </p>
 </div>
 
@@ -210,7 +255,7 @@ Genome Analysis of <i>Streptomyces silvae</i>
 </h3>
 
 <p class="text-zinc-600 mb-6">
-Analyse genomischer Daten zur Identifikation struktureller Unterschiede und funktionaler Potenziale.
+Genomische Analyse zur Untersuchung von Struktur und funktionalem Potenzial.
 </p>
 
 <a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
@@ -221,10 +266,10 @@ class="mt-auto text-teal-600 font-medium">
 
 <div class="bg-zinc-50 rounded-3xl p-10 card-hover flex flex-col">
 <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
-<h3 class="text-2xl font-semibold mb-4">Schreiben & Romanprojekt</h3>
+<h3 class="text-2xl font-semibold mb-4">Schreiben</h3>
 
 <p class="text-zinc-600 mb-6">
-Verbindung wissenschaftlicher Inhalte mit narrativer Struktur und verständlicher Vermittlung.
+Verbindung von Wissenschaft und verständlicher Vermittlung.
 </p>
 
 <a href="Echo der Unsichtbaren.html"
