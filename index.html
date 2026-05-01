@@ -25,7 +25,7 @@ body { font-family: 'Inter', system-ui, sans-serif; }
     content: '';
     width: 60px;
     height: 3px;
-    background: #00C4B4;
+    background: #00AAD4;
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -47,7 +47,7 @@ body { font-family: 'Inter', system-ui, sans-serif; }
     justify-content: center;
     border-radius: 10px;
     background: #ecfeff;
-    color: #00C4B4;
+    color: #00AAD4;
     font-size: 1.1rem;
     margin-bottom: 14px;
 }
@@ -57,7 +57,7 @@ body { font-family: 'Inter', system-ui, sans-serif; }
     position: absolute;
     width: 300px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #00C4B4, transparent);
+    background: linear-gradient(90deg, transparent, #00AAD4, transparent);
     top: 40%;
     left: -300px;
     animation: moveLine 12s linear infinite;
@@ -81,15 +81,15 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
 
 <div class="flex items-center gap-3">
-<img src="Logo.svg" class="h-10">
+<img src="Logo.svg" class="h-10" alt="Logo Dr. Daniela Hartmann">
 <div class="text-xl font-semibold text-[#002B5B]">Dr. Daniela Hartmann</div>
 </div>
 
 <div class="hidden md:flex gap-8 text-sm font-medium">
-<a href="#profil" class="hover:text-teal-600">Profil</a>
-<a href="#kompetenzen" class="hover:text-teal-600">Kompetenzen</a>
-<a href="#arbeitsweise" class="hover:text-teal-600">Arbeitsweise</a>
-<a href="#projekte" class="hover:text-teal-600">Projekte</a>
+<a href="#profil" class="hover:text-[#00AAD4]">Profil</a>
+<a href="#kompetenzen" class="hover:text-[#00AAD4]">Kompetenzen</a>
+<a href="#arbeitsweise" class="hover:text-[#00AAD4]">Arbeitsweise</a>
+<a href="#projekte" class="hover:text-[#00AAD4]">Projekte</a>
 <a href="#kontakt" class="text-[#b08a2d] font-semibold">Kontakt</a>
 </div>
 
@@ -123,30 +123,30 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 <h1 class="text-5xl md:text-6xl font-bold mb-6 space-y-4 leading-tight">
 <span class="block">Analyse.</span>
 <span class="block">Struktur.</span>
-<span class="block text-teal-400">Klarheit.</span>
+<span class="block text-[#00AAD4]">Klarheit.</span>
 </h1>
 
-<p class="text-xl text-zinc-200 mb-6 max-w-lg">
-Ich arbeite mich so lange in komplexe Zusammenhänge ein, bis sie wirklich klar sind.
+<p class="text-xl text-zinc-200 mb-6 max-w-xl">
+Wissenschaftsmanagement, Entscheidungsgrundlagen und Kommunikation an der Schnittstelle von Wissenschaft, Organisation und Verantwortung.
 </p>
 
-<p class="text-zinc-300 mb-10 max-w-lg">
-Strukturierte Analyse und verständliche Aufbereitung – eigenständig und remote.
+<p class="text-zinc-300 mb-10 max-w-xl">
+Ich ordne komplexe Inhalte, entwickle tragfähige Strukturen und bereite Informationen so auf, dass fundierte Entscheidungen möglich werden.
 </p>
 
-<div class="flex gap-4">
-<a href="#kontakt" class="bg-white text-[#002B5B] px-8 py-4 rounded-full font-semibold hover:bg-teal-400 hover:text-white transition">
+<div class="flex flex-wrap gap-4">
+<a href="#kontakt" class="bg-white text-[#002B5B] px-8 py-4 rounded-full font-semibold hover:bg-[#00AAD4] hover:text-white transition">
 Kontakt aufnehmen
 </a>
 
-<a href="#projekte" class="border border-white/70 px-8 py-4 rounded-full">
-Projekte ansehen
+<a href="#kompetenzen" class="border border-white/70 px-8 py-4 rounded-full hover:bg-white hover:text-[#002B5B] transition">
+Kompetenzen ansehen
 </a>
 </div>
 </div>
 
 <div class="hidden md:flex justify-end">
-<img src="Daniela Hartmann.png" class="w-80 h-80 object-cover rounded-3xl shadow-2xl">
+<img src="Daniela Hartmann.png" class="w-80 h-80 object-cover rounded-3xl shadow-2xl" alt="Dr. Daniela Hartmann">
 </div>
 
 </div>
@@ -157,14 +157,28 @@ Projekte ansehen
 <div class="max-w-6xl mx-auto px-6">
 <h2 class="section-title text-4xl font-semibold mb-12">Profil</h2>
 
-<p class="text-lg max-w-3xl">
-Mich interessiert vor allem eines: Dinge so lange zu durchdringen, bis sie wirklich klar sind.
+<div class="grid md:grid-cols-2 gap-12 items-start">
+
+<div>
+<p class="text-lg leading-relaxed text-zinc-700">
+Meine berufliche Laufbahn verbindet naturwissenschaftliche Forschung, betriebswirtschaftliches Denken und organisatorische Praxis. Ich habe gelernt, komplexe Sachverhalte systematisch zu analysieren, Informationen belastbar zu bewerten und Ergebnisse verständlich sowie entscheidungsorientiert aufzubereiten.
 </p>
 
-<div class="mt-6 border-l-4 border-teal-400 pl-6">
-    <p class="text-xl font-semibold">
-        Ich gebe mich nicht mit oberflächlichen Antworten zufrieden.
-    </p>
+<p class="text-lg leading-relaxed text-zinc-700 mt-6">
+Besonders motiviert mich die Arbeit dort, wo Wissenschaft, Organisation und Kommunikation ineinandergreifen: in der Koordination anspruchsvoller Prozesse, der Entwicklung klarer Strukturen und der verlässlichen Unterstützung von Entscheidungen.
+</p>
+</div>
+
+<div class="bg-zinc-50 rounded-3xl p-10 border border-zinc-100">
+<p class="text-xl font-semibold text-[#002B5B] mb-4">
+Ich gebe mich nicht mit oberflächlichen Antworten zufrieden.
+</p>
+
+<p class="text-zinc-600 leading-relaxed">
+Meine Stärke liegt darin, Themen gründlich zu durchdringen, unterschiedliche Perspektiven zu ordnen und daraus klare, nutzbare Grundlagen für Zusammenarbeit, Planung und Entscheidung zu entwickeln.
+</p>
+</div>
+
 </div>
 
 </div>
@@ -175,29 +189,37 @@ Mich interessiert vor allem eines: Dinge so lange zu durchdringen, bis sie wirkl
 <div class="max-w-6xl mx-auto px-6">
 <h2 class="section-title text-4xl font-semibold mb-12">Kernkompetenzen</h2>
 
-<div class="grid md:grid-cols-3 gap-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-<div class="bg-white p-10 rounded-3xl card-hover">
-<div class="icon-box"><i class="fa-solid fa-magnifying-glass"></i></div>
-<h3 class="text-xl font-semibold mb-3">Analyse</h3>
+<div class="bg-white p-8 rounded-3xl card-hover">
+<div class="icon-box"><i class="fa-solid fa-building-columns"></i></div>
+<h3 class="text-xl font-semibold mb-3">Wissenschaftsmanagement</h3>
 <p class="text-zinc-600">
-Ich erkenne Muster und Zusammenhänge auch in komplexen Daten.
+Organisation wissenschaftlicher Prozesse, Koordination von Abläufen und strukturierte Unterstützung akademischer Entscheidungswege.
 </p>
 </div>
 
-<div class="bg-white p-10 rounded-3xl card-hover">
-<div class="icon-box"><i class="fa-solid fa-diagram-project"></i></div>
-<h3 class="text-xl font-semibold mb-3">Struktur</h3>
+<div class="bg-white p-8 rounded-3xl card-hover">
+<div class="icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+<h3 class="text-xl font-semibold mb-3">Analyse und Vorlagen</h3>
 <p class="text-zinc-600">
-Ich bringe Ordnung in unübersichtliche Inhalte und entwickle klare Modelle.
+Recherche, Bewertung und Verdichtung komplexer Informationen zu belastbaren Entscheidungsgrundlagen.
 </p>
 </div>
 
-<div class="bg-white p-10 rounded-3xl card-hover">
-<div class="icon-box"><i class="fa-solid fa-lightbulb"></i></div>
-<h3 class="text-xl font-semibold mb-3">Klarheit</h3>
+<div class="bg-white p-8 rounded-3xl card-hover">
+<div class="icon-box"><i class="fa-solid fa-chalkboard-user"></i></div>
+<h3 class="text-xl font-semibold mb-3">Lehre und Betreuung</h3>
 <p class="text-zinc-600">
-Ich mache komplexe Inhalte verständlich und nutzbar.
+Entwicklung von Lehrformaten, Betreuung von Studierenden und Organisation praxisnaher Lernprozesse.
+</p>
+</div>
+
+<div class="bg-white p-8 rounded-3xl card-hover">
+<div class="icon-box"><i class="fa-solid fa-comments"></i></div>
+<h3 class="text-xl font-semibold mb-3">Kommunikation</h3>
+<p class="text-zinc-600">
+Verständliche Aufbereitung komplexer Inhalte für unterschiedliche Zielgruppen, von Fachpublikum bis Öffentlichkeit.
 </p>
 </div>
 
@@ -206,75 +228,124 @@ Ich mache komplexe Inhalte verständlich und nutzbar.
 </section>
 
 <!-- ARBEITSWEISE -->
-<section id="arbeitsweise" class="py-20 bg-zinc-50">
+<section id="arbeitsweise" class="py-20 bg-white">
 <div class="max-w-6xl mx-auto px-6">
 <h2 class="section-title text-4xl font-semibold mb-12">Arbeitsweise</h2>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="bg-white p-10 rounded-3xl card-hover">
-<div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
-<h3 class="text-xl font-semibold mb-3">Eigenständig</h3>
-<p class="text-zinc-600">
-Schnelle Einarbeitung und selbstständige Umsetzung.
-</p>
-</div>
-
-<div class="bg-white p-10 rounded-3xl card-hover">
+<div class="bg-zinc-50 p-10 rounded-3xl card-hover">
 <div class="icon-box"><i class="fa-solid fa-list-check"></i></div>
 <h3 class="text-xl font-semibold mb-3">Strukturiert</h3>
 <p class="text-zinc-600">
-Klare Prozesse und nachvollziehbare Ergebnisse.
+Ich schaffe Übersicht, priorisiere Aufgaben und entwickle nachvollziehbare Prozesse für komplexe Anforderungen.
 </p>
 </div>
 
-<div class="bg-white p-10 rounded-3xl card-hover">
-<div class="icon-box"><i class="fa-solid fa-globe"></i></div>
-<h3 class="text-xl font-semibold mb-3">Remote</h3>
+<div class="bg-zinc-50 p-10 rounded-3xl card-hover">
+<div class="icon-box"><i class="fa-solid fa-bullseye"></i></div>
+<h3 class="text-xl font-semibold mb-3">Verlässlich</h3>
 <p class="text-zinc-600">
-Zuverlässige Kommunikation und effizientes Arbeiten auf Distanz.
+Ich arbeite sorgfältig, termintreu und mit einem hohen Anspruch an fachliche Qualität und klare Ergebnisse.
+</p>
+</div>
+
+<div class="bg-zinc-50 p-10 rounded-3xl card-hover">
+<div class="icon-box"><i class="fa-solid fa-network-wired"></i></div>
+<h3 class="text-xl font-semibold mb-3">Schnittstellenstark</h3>
+<p class="text-zinc-600">
+Ich arbeite sicher mit unterschiedlichen Akteuren zusammen und übersetze zwischen Fachlichkeit, Organisation und Kommunikation.
 </p>
 </div>
 
 </div>
+
+<div class="mt-12 bg-[#002B5B] text-white rounded-3xl p-10">
+<p class="text-2xl font-semibold mb-4">
+Wissenschaft braucht Struktur, damit gute Entscheidungen möglich werden.
+</p>
+<p class="text-zinc-200 leading-relaxed max-w-4xl">
+Ob Forschungsprojekt, Lehrorganisation, Gremienarbeit oder strategische Planung: Entscheidend ist, Informationen so zu ordnen, dass Verantwortungsträger schnell verstehen, worum es geht, welche Optionen bestehen und welche Konsequenzen daraus folgen.
+</p>
+</div>
+
 </div>
 </section>
 
 <!-- PROJEKTE -->
-<section id="projekte" class="py-20 bg-white">
+<section id="projekte" class="py-20 bg-zinc-50">
 <div class="max-w-6xl mx-auto px-6">
-<h2 class="section-title text-4xl font-semibold mb-12">Projekte</h2>
+<h2 class="section-title text-4xl font-semibold mb-12">Projekte und Arbeitsfelder</h2>
 
 <div class="grid md:grid-cols-2 gap-10">
 
-<div class="bg-zinc-50 rounded-3xl p-10 card-hover flex flex-col">
+<div class="bg-white rounded-3xl p-10 card-hover flex flex-col">
 <div class="icon-box"><i class="fa-solid fa-dna"></i></div>
 <h3 class="text-2xl font-semibold mb-4">
 Genome Analysis of <i>Streptomyces silvae</i>
 </h3>
 
 <p class="text-zinc-600 mb-6">
-Genomische Analyse zur Untersuchung von Struktur und funktionalem Potenzial.
+Mehrjähriges wissenschaftliches Projekt mit genomischer Analyse, vergleichender Auswertung und strukturierter Darstellung komplexer biologischer Zusammenhänge.
 </p>
 
+<ul class="text-zinc-600 mb-8 space-y-2">
+<li>• Planung und Bearbeitung eines anspruchsvollen Forschungsprojekts</li>
+<li>• Analyse umfangreicher Datensätze</li>
+<li>• Aufbereitung wissenschaftlicher Ergebnisse</li>
+<li>• Verbindung von Laborerfahrung und digitaler Analyse</li>
+</ul>
+
 <a href="https://daha2.github.io/Streptomyces-genome-analysis/" target="_blank"
-class="mt-auto text-teal-600 font-medium">
+class="mt-auto text-[#00AAD4] font-medium">
 → Projekt ansehen
 </a>
 </div>
 
-<div class="bg-zinc-50 rounded-3xl p-10 card-hover flex flex-col">
+<div class="bg-white rounded-3xl p-10 card-hover flex flex-col">
 <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
-<h3 class="text-2xl font-semibold mb-4">Schreiben</h3>
+<h3 class="text-2xl font-semibold mb-4">Text, Konzept und Vermittlung</h3>
 
 <p class="text-zinc-600 mb-6">
-Verbindung von Wissenschaft und verständlicher Vermittlung.
+Strukturierte Textarbeit, verständliche Darstellung wissenschaftlicher Inhalte und Entwicklung von Formaten, die komplexe Themen zugänglich machen.
 </p>
 
+<ul class="text-zinc-600 mb-8 space-y-2">
+<li>• Wissenschaftliche Recherche und Verdichtung</li>
+<li>• Didaktische Strukturierung von Inhalten</li>
+<li>• Kommunikation für unterschiedliche Zielgruppen</li>
+<li>• Konzeptionelle Arbeit zwischen Analyse und Sprache</li>
+</ul>
+
 <a href="Echo der Unsichtbaren.html"
-class="mt-auto text-teal-600 font-medium">
+class="mt-auto text-[#00AAD4] font-medium">
 → Mehr erfahren
 </a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- QUALIFIKATION -->
+<section class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="section-title text-4xl font-semibold mb-12">Was ich einbringe</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="bg-zinc-50 rounded-3xl p-10">
+<h3 class="text-2xl font-semibold text-[#002B5B] mb-6">Wissenschaftliche Tiefe</h3>
+<p class="text-zinc-600 leading-relaxed">
+Promotion in Biologie, Erfahrung in mikrobiologischer Forschung, vergleichender Genomanalyse und wissenschaftlicher Ergebnisdarstellung. Diese Grundlage ermöglicht mir, anspruchsvolle Inhalte schnell zu erfassen und fachlich belastbar einzuordnen.
+</p>
+</div>
+
+<div class="bg-zinc-50 rounded-3xl p-10">
+<h3 class="text-2xl font-semibold text-[#002B5B] mb-6">Organisatorische Breite</h3>
+<p class="text-zinc-600 leading-relaxed">
+Betriebswirtschaftlicher Hintergrund, Erfahrung in universitärer Lehre, Koordination von Praktika und Zusammenarbeit mit Studierenden, Mitarbeitenden und externen Partnern. Diese Verbindung stärkt meinen Blick für Prozesse, Ressourcen und Verantwortung.
+</p>
 </div>
 
 </div>
@@ -288,16 +359,16 @@ class="mt-auto text-teal-600 font-medium">
 <h2 class="text-4xl font-semibold mb-6">Kontakt</h2>
 
 <p class="text-xl text-zinc-300 mb-10">
-Wenn Sie ein komplexes Thema wirklich verstehen und klar aufbereitet haben möchten, freue ich mich über Ihre Nachricht.
+Wenn Sie Unterstützung bei strukturierten Entscheidungsgrundlagen, Wissenschaftsmanagement oder der klaren Aufbereitung komplexer Inhalte suchen, freue ich mich über Ihre Nachricht.
 </p>
 
 <a href="mailto:hartmann.daniela@proton.me"
-class="bg-white text-[#002B5B] px-10 py-5 rounded-full text-lg font-semibold hover:bg-teal-400 hover:text-white transition">
+class="bg-white text-[#002B5B] px-10 py-5 rounded-full text-lg font-semibold hover:bg-[#00AAD4] hover:text-white transition">
 E-Mail senden
 </a>
 
 <div class="mt-10 flex justify-center">
-<img src="Logo.svg" class="w-28 opacity-90">
+<img src="Logo.svg" class="w-28 opacity-90" alt="Logo Dr. Daniela Hartmann">
 </div>
 
 </div>
@@ -305,7 +376,7 @@ E-Mail senden
 
 <footer class="bg-zinc-900 text-zinc-400 py-10 text-center text-sm">
 © 2026 Dr. Daniela Hartmann | 
-<a href="Impressum.html">
+<a href="Impressum.html" class="hover:text-white">
   Impressum &amp; Datenschutz
 </a>
 </footer>
